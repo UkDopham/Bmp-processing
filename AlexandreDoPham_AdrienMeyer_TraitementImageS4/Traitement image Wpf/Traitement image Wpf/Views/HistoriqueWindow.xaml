@@ -1,0 +1,54 @@
+﻿<Window x:Class="Traitement_image_Wpf.Views.HistoriqueWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Traitement_image_Wpf.Views"
+        mc:Ignorable="d"
+        Title="HistoriqueWindow" 
+        Height="300" 
+        Width="300"
+        ResizeMode="NoResize"
+        WindowStyle="None">
+    <Grid Background="{StaticResource grisClaire}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="8*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0"
+              Background="White"
+              MouseLeftButtonDown ="Grid_MouseLeftButtonDown">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Text=" Historique"
+                       Style="{StaticResource barreTextBlock}"
+                       Grid.Column="0"/>
+
+            <!--Fermer-->
+            <Button Background="White"
+                        BorderThickness="0"
+                        Grid.Column="6"
+                        Click="FermerButtonClick">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Width="20"
+                        Source="pack://siteoforigin:,,,/Resources/cancel.png"/>
+                        <TextBlock Text=" Fermer"
+                                       Style="{StaticResource barreTextBlock}"/>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+           
+        </Grid>
+
+        <ListBox x:Name="HistoriqueListBox" 
+                 Grid.Row="1">
+
+        </ListBox>
+
+    </Grid>
+</Window>

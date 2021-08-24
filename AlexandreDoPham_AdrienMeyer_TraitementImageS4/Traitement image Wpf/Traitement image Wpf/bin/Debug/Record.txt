@@ -1,0 +1,10 @@
+Record;EASY;40
+fgrez;EASY;35
+adri;EASY;25
+zizou;NORMAL;10
+henzy ;HARD;10
+lolz;HARD;10
+Alexandre;HARD;9
+adrien;EASY;9
+Alexandre;EASY;5
+lol;EASY;5

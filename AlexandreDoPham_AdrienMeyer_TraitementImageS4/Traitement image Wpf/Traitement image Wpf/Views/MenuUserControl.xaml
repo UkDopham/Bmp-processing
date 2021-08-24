@@ -1,0 +1,985 @@
+﻿<UserControl x:Class="Traitement_image_Wpf.Views.MenuUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Traitement_image_Wpf.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="700" 
+             d:DesignWidth="1050">
+    <Grid Background="{StaticResource grisClaire}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Barre d'outil-->
+        <Grid Grid.Column="0"
+              Grid.Row="0"
+              Background="White"
+              MouseLeftButtonDown="Grid_MouseLeftButtonDown">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="3*"/>
+            </Grid.RowDefinitions>
+
+            <!-- bouton enregistrer etc -->
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!--Fichier-->
+                <Button Background="White"
+                        BorderThickness="0"
+                        Click="folderButtonClick"
+                        Grid.Column="0">
+                    <Button.Content>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Style="{StaticResource imageBarreDeTache}"
+                               Source="pack://siteoforigin:,,,/Resources/bmp.png"/>
+                            <TextBlock Text=" Ouvrir"
+                                       Style="{StaticResource barreTextBlock}"/>
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
+
+                <!--Nouveau-->
+                <Button Background="White"
+                        BorderThickness="0"
+                        Grid.Column="1"
+                        Click="NewButtonClick">
+                    <Button.Content>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Style="{StaticResource imageBarreDeTache}"
+                               Source="pack://siteoforigin:,,,/Resources/bmp.png"/>
+                            <TextBlock Text=" Nouveau"
+                                       Style="{StaticResource barreTextBlock}"/>
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
+
+                <!--Enregistrer-->
+                <Button Background="White"
+                        BorderThickness="0"
+                        Grid.Column="2"
+                        Click="EnregistrerButtonClick">
+                    <Button.Content>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Style="{StaticResource imageBarreDeTache}"
+                               Source="pack://siteoforigin:,,,/Resources/bmp.png"/>
+                            <TextBlock Text=" Enregistrer"
+                                       Style="{StaticResource barreTextBlock}"/>
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
+
+                <!--Profile-->
+                <StackPanel Orientation="Horizontal"
+                            Grid.Column="3">
+
+                    <Image Source="pack://siteoforigin:,,,/Resources/man (1).png"/>
+
+                    <TextBlock x:Name="loginTextBlock" 
+                               Margin="3,0" 
+                               Text="{Binding Nom , UpdateSourceTrigger=PropertyChanged}"
+                               Style="{StaticResource barreTextBlock}"/>
+                </StackPanel>
+
+                <!-- Historique-->
+                <Button Background="White"
+                        BorderThickness="0"
+                        Grid.Column="4"
+                        Click="HistoriqueButtonClick">
+                    <Button.Content>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Style="{StaticResource imageBarreDeTache}"
+                               Source="pack://siteoforigin:,,,/Resources/navigation-history-interface-symbol-of-a-clock-with-an-arrow.png"/>
+                            <TextBlock Text=" Historique"
+                                       Style="{StaticResource barreTextBlock}"/>
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
+                
+                <!--Fermer-->
+                <Button Background="White"
+                        BorderThickness="0"
+                        Grid.Column="6"
+                        Click="FermerButtonClick">
+                    <Button.Content>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Style="{StaticResource imageBarreDeTache}"
+                               Source="pack://siteoforigin:,,,/Resources/cancel.png"/>
+                            <TextBlock Text=" Fermer"
+                                       Style="{StaticResource barreTextBlock}"/>
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
+
+                <!--Jeu-->
+                <Button x:Name="jeuBouton" 
+                    Background="White"
+                    BorderThickness="0"
+                    Grid.Column="5"
+                        Click="jeuBouton_Click">
+                    <Button.Content>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Style="{StaticResource imageBarreDeTache}"
+                               Source="pack://siteoforigin:,,,/Resources/trophy.png"/>
+                            <TextBlock Text=" Jeu devinette"
+                                       Style="{StaticResource barreTextBlock}"/>
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
+            </Grid>
+
+            <Grid Background="White"
+                  Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- retour en arrière-->
+                <Button BorderThickness="0"
+                        Grid.Column="0"
+                        Background="White"
+                        Click="RetourButtonClick">
+
+                    <Button.Content>
+                        <Image Style="{StaticResource imageBarreDeTachePetit}"
+                               Source="pack://siteoforigin:,,,/Resources/left-arrow.png"/>
+                    </Button.Content>
+                </Button>
+
+                
+               
+            </Grid>
+
+            <StackPanel Grid.Row="2"
+                        Orientation="Horizontal">
+
+                <!--Type d'outils-->
+                <TextBlock Text=" Outils"
+                           Style="{StaticResource barreTextBlock}"/>
+
+                <ComboBox Margin="5,2"
+                          x:Name="OutilComboBox">
+                    
+                    <ComboBoxItem x:Name="StyloComboBoxItem" 
+                                  IsSelected="True">
+                        <Image x:Name="StyloImage" 
+                               Style="{StaticResource imageBarreDeTache}"
+                       Source="pack://siteoforigin:,,,/Resources/pen.png"/>
+                    </ComboBoxItem>
+                    
+                </ComboBox>
+
+                <!-- taille outils -->
+                <TextBlock Text="Taille du l'outils"
+                           Style="{StaticResource barreTextBlock}"/>
+
+                <ComboBox x:Name="FontSizeComboBox" 
+                          Margin="5,2"
+                          VerticalAlignment="Center">
+                    <ComboBoxItem IsSelected="True" Content="1"/>
+                    <ComboBoxItem Content="2"/>
+                    <ComboBoxItem Content="3"/>
+                    <ComboBoxItem Content="4"/>
+                    <ComboBoxItem Content="5"/>
+                    <ComboBoxItem Content="6"/>
+                    <ComboBoxItem Content="7"/>
+                    <ComboBoxItem Content="8"/>
+                    <ComboBoxItem Content="9"/>
+                    <ComboBoxItem Content="10"/>
+                </ComboBox>
+
+                <!--Nom du fichier-->
+                <TextBlock Text="{Binding NomFichier, UpdateSourceTrigger=PropertyChanged}"
+                           Style="{StaticResource barreTextBlock}"/>
+            </StackPanel>
+
+        </Grid>
+
+        <Grid   Grid.Column="0"
+                Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="7*"/>
+            </Grid.ColumnDefinitions>
+
+            <!--Barre d'outils-->
+            <Grid Grid.Column="0"
+                  Margin="5"
+                  Background="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <!--Differents types d'effet-->
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <!--decodage-->
+                    <Button x:Name="decodageBouton" 
+                    Background="White"
+                    BorderThickness="0"
+                    Grid.Column="0"
+                            Grid.Row="0"
+                    Click="ButtonClick">
+                        <Button.Content>
+                            <Image Style="{StaticResource imageBarreDeTache}"
+                                   Source="pack://siteoforigin:,,,/Resources/unlock.png"/>
+                        </Button.Content>
+                    </Button>
+
+                    <!--Message codé-->
+                    <Button x:Name="imageCacheBouton" 
+                    Background="White"
+                    BorderThickness="0"
+                    Grid.Column="1"
+                            Grid.Row="0"
+                    Click="imageCacheBoutonClick">
+                        <Button.Content>
+                            <Image Style="{StaticResource imageBarreDeTache}" 
+                                   Source="pack://siteoforigin:,,,/Resources/printer.png"/>
+                        </Button.Content>
+                    </Button>
+
+                    <!--Mirroir-->
+                    <Button x:Name="mirroirBouton" 
+                    Background="White"
+                    BorderThickness="0"
+                            Grid.Row="1"
+                    Grid.Column="0"
+                    Click="ButtonClick">
+                        <Button.Content>
+                            <Image Style="{StaticResource imageBarreDeTache}" 
+                                   Source="pack://siteoforigin:,,,/Resources/magic-mirror.png"/>
+                        </Button.Content>
+                    </Button>
+
+                    <!--Vieille photo-->
+                    <Button x:Name="vieilleBouton" 
+                    Background="White"
+                    BorderThickness="0"
+                    Grid.Column="1"
+                            Grid.Row="1"
+                    Click="ButtonClick">
+                        <Button.Content>
+                            <Image Style="{StaticResource imageBarreDeTache}" 
+                                   Source="pack://siteoforigin:,,,/Resources/couple.png"/>
+                        </Button.Content>
+                    </Button>
+
+                    <!--Gris-->
+                    <Button x:Name="grisBouton" 
+                    Background="White"
+                    BorderThickness="0"
+                    Grid.Column="0"
+                            Grid.Row="2"
+                    Click="ButtonClick">
+                        <Button.Content>
+                            <Image Style="{StaticResource imageBarreDeTache}" 
+                                   Source="pack://siteoforigin:,,,/Resources/contrast-rotated-symbol.png"/>
+                        </Button.Content>
+                    </Button>
+
+                    <!--Pixelisation-->
+                    <Button x:Name="pixelBouton" 
+                    Background="White"
+                    BorderThickness="0"
+                    Grid.Column="1"
+                            Grid.Row="2"
+                    Click="pixelBoutonClick">
+                        <Button.Content>
+                            <Image Style="{StaticResource imageBarreDeTache}" 
+                                   Source="pack://siteoforigin:,,,/Resources/minecraft.png"/>
+                        </Button.Content>
+                    </Button>
+
+                    <!--Fractale-->
+                    <Button x:Name="fractaleBouton" 
+                    Background="White"
+                    BorderThickness="0"
+                    Grid.Column="0"
+                            Grid.Row="3"
+                    Click="fractaleBoutonClick">
+                        <Button.Content>
+                            <Image Style="{StaticResource imageBarreDeTache}" 
+                                   Source="pack://siteoforigin:,,,/Resources/flower-of-complex-design-shape.png"/>
+                        </Button.Content>
+                    </Button>
+
+                    <!--Seuillage-->
+                    <Button x:Name="seuillageBouton" 
+                    Background="White"
+                    BorderThickness="0"
+                    Grid.Column="1"
+                            Grid.Row="3"
+                    Click="PersoBoutonClick">
+                        <Button.Content>
+                            <Image Style="{StaticResource imageBarreDeTache}" 
+                                   Source="pack://siteoforigin:,,,/Resources/speed-limit.png"/>
+                        </Button.Content>
+                    </Button>
+
+                    <!-- Matrice convolution-->
+                    <Button x:Name="convolutionBouton" 
+                    Background="White"
+                    BorderThickness="0"
+                    Grid.Column="0"
+                            Grid.Row="4"
+                    Click="convolutionBoutonClick">
+                        <Button.Content>
+                            <Image Style="{StaticResource imageBarreDeTache}" 
+                                   Source="pack://siteoforigin:,,,/Resources/pixel.png"/>
+                        </Button.Content>
+                    </Button>
+
+                    <!-- Histogramme-->
+                    <Button x:Name="histogrammeBouton" 
+                    Background="White"
+                    BorderThickness="0"
+                    Grid.Column="1"
+                            Grid.Row="4"
+                    Click="ButtonClick">
+                        <Button.Content>
+                            <Image Style="{StaticResource imageBarreDeTache}" 
+                                   Source="pack://siteoforigin:,,,/Resources/diagram.png"/>
+                        </Button.Content>
+                    </Button>
+
+                    <!-- Rotation -->
+                    <Button x:Name="rotationBouton" 
+                    Background="White"
+                    BorderThickness="0"
+                    Grid.Column="0"
+                            Grid.Row="5"
+                    Click="ButtonClick">
+                        <Button.Content>
+                            <Image Style="{StaticResource imageBarreDeTache}" 
+                                   Source="pack://siteoforigin:,,,/Resources/rotation.png"/>
+                        </Button.Content>
+                    </Button>
+
+                    <!--Vertation-->
+                    <Button x:Name="vertationBouton" 
+                    Background="White"
+                    BorderThickness="0"
+                    Grid.Column="1"
+                            Grid.Row="5"
+                    Click="ButtonClick">
+                        <Button.Content>
+                            <Image Style="{StaticResource imageBarreDeTache}" 
+                                   Source="pack://siteoforigin:,,,/Resources/paint-bucket.png"/>
+                        </Button.Content>
+                    </Button>
+
+                    <!-- Text -->
+                    <Button x:Name="messageBouton" 
+                    Background="White"
+                    BorderThickness="0"
+                    Grid.Column="0"
+                            Grid.Row="6"
+                    Click="messageBoutonClick">
+                        <Button.Content>
+                            <Image Style="{StaticResource imageBarreDeTache}" 
+                                   Source="pack://siteoforigin:,,,/Resources/text.png"/>
+                        </Button.Content>
+                    </Button>
+
+                    <!--Redimension-->
+                    <Button x:Name="redimensionBouton" 
+                    Background="White"
+                    BorderThickness="0"
+                    Grid.Column="1"
+                            Grid.Row="6"
+                    Click="redimensionBoutonClick">
+                        <Button.Content>
+                            <Image Style="{StaticResource imageBarreDeTache}" 
+                                   Source="pack://siteoforigin:,,,/Resources/scale.png"/>
+                        </Button.Content>
+                    </Button>
+                </Grid>
+
+                <!--Palette de couleur-->
+                <Border Grid.Row="1"
+                        BorderBrush="Black"
+                        BorderThickness="1">
+                    <Grid >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <!--Noir-->
+                        <Button Grid.Column="0"
+                            Grid.Row="0"
+                            BorderThickness="0"
+                            Background="#ffffff"
+                            Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="0"
+                            Grid.Row="1"
+                            BorderThickness="0"
+                            Background="#e5e5e5"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="0"
+                            Grid.Row="2"
+                            BorderThickness="0"
+                            Background="#cccccc"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="0"
+                            Grid.Row="3"
+                            BorderThickness="0"
+                            Background="#b2b2b2"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="0"
+                            Grid.Row="4"
+                            BorderThickness="0"
+                            Background="#999999"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="0"
+                            Grid.Row="5"
+                            BorderThickness="0"
+                            Background="#7f7f7f"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="0"
+                            Grid.Row="6"
+                            BorderThickness="0"
+                            Background="#666666"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="0"
+                            Grid.Row="7"
+                            BorderThickness="0"
+                            Background="#4c4c4c"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="0"
+                            Grid.Row="8"
+                            BorderThickness="0"
+                            Background="#191919"
+                                Click="CouleurButtonClick"/>
+
+                        <!--Rouge-->
+                        <Button Grid.Column="1"
+                            Grid.Row="0"
+                            BorderThickness="0"
+                            Background="#ffe5e5"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="1"
+                            Grid.Row="1"
+                            BorderThickness="0"
+                            Background="#ffb2b2"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="1"
+                            Grid.Row="2"
+                            BorderThickness="0"
+                            Background="#ff7f7f"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="1"
+                            Grid.Row="3"
+                            BorderThickness="0"
+                            Background="#ff4c4c"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="1"
+                            Grid.Row="4"
+                            BorderThickness="0"
+                            Background="#ff1919"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="1"
+                            Grid.Row="5"
+                            BorderThickness="0"
+                            Background="#e50000"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="1"
+                            Grid.Row="6"
+                            BorderThickness="0"
+                            Background="#b20000"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="1"
+                            Grid.Row="7"
+                            BorderThickness="0"
+                            Background="#7f0000"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="1"
+                            Grid.Row="8"
+                            BorderThickness="0"
+                            Background="#4c0000"
+                                Click="CouleurButtonClick"/>
+
+                        <!--Vert-->
+                        <Button Grid.Column="2"
+                            Grid.Row="0"
+                            BorderThickness="0"
+                            Background="#e5f2e5"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="2"
+                            Grid.Row="1"
+                            BorderThickness="0"
+                            Background="#b2d8b2"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="2"
+                            Grid.Row="2"
+                            BorderThickness="0"
+                            Background="#7fbf7f"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="2"
+                            Grid.Row="3"
+                            BorderThickness="0"
+                            Background="#4ca64c"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="2"
+                            Grid.Row="4"
+                            BorderThickness="0"
+                            Background="#198c19"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="2"
+                            Grid.Row="5"
+                            BorderThickness="0"
+                            Background="#007300"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="2"
+                            Grid.Row="6"
+                            BorderThickness="0"
+                            Background="#005900"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="2"
+                            Grid.Row="7"
+                            BorderThickness="0"
+                            Background="#004000"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="2"
+                            Grid.Row="8"
+                            BorderThickness="0"
+                            Background="#002600"
+                                Click="CouleurButtonClick"/>
+
+                        <!--Bleu-->
+                        <Button Grid.Column="3"
+                            Grid.Row="0"
+                            BorderThickness="0"
+                            Background="#e5e5ff"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="3"
+                            Grid.Row="1"
+                            BorderThickness="0"
+                            Background="#b2b2ff"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="3"
+                            Grid.Row="2"
+                            BorderThickness="0"
+                            Background="#7f7fff"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="3"
+                            Grid.Row="3"
+                            BorderThickness="0"
+                            Background="#4c4cff"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="3"
+                            Grid.Row="4"
+                            BorderThickness="0"
+                            Background="#1919ff"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="3"
+                            Grid.Row="5"
+                            BorderThickness="0"
+                            Background="#0000e5"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="3"
+                            Grid.Row="6"
+                            BorderThickness="0"
+                            Background="#0000b2"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="3"
+                            Grid.Row="7"
+                            BorderThickness="0"
+                            Background="#00007f"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="3"
+                            Grid.Row="8"
+                            BorderThickness="0"
+                            Background="#00004c"
+                                Click="CouleurButtonClick"/>
+
+
+                        <!--yellow-->
+                        <Button Grid.Column="4"
+                            Grid.Row="0"
+                            BorderThickness="0"
+                            Background="#ffffe5"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="4"
+                            Grid.Row="1"
+                            BorderThickness="0"
+                            Background="#ffffb2"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="4"
+                            Grid.Row="2"
+                            BorderThickness="0"
+                            Background="#ffff7f"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="4"
+                            Grid.Row="3"
+                            BorderThickness="0"
+                            Background="#ffff4c"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="4"
+                            Grid.Row="4"
+                            BorderThickness="0"
+                            Background="#ffff19"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="4"
+                            Grid.Row="5"
+                            BorderThickness="0"
+                            Background="#e5e500"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="4"
+                            Grid.Row="6"
+                            BorderThickness="0"
+                            Background="#b2b200"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="4"
+                            Grid.Row="7"
+                            BorderThickness="0"
+                            Background="#7f7f00"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="4"
+                            Grid.Row="8"
+                            BorderThickness="0"
+                            Background="#4c4c00"
+                                Click="CouleurButtonClick"/>
+
+                        <!--Orange-->
+                        <Button Grid.Column="5"
+                            Grid.Row="0"
+                            BorderThickness="0"
+                            Background="#fff6e5"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="5"
+                            Grid.Row="1"
+                            BorderThickness="0"
+                            Background="#ffe4b2"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="5"
+                            Grid.Row="2"
+                            BorderThickness="0"
+                            Background="#ffd27f"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="5"
+                            Grid.Row="3"
+                            BorderThickness="0"
+                            Background="#ffc04c"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="5"
+                            Grid.Row="4"
+                            BorderThickness="0"
+                            Background="#ffae19"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="5"
+                            Grid.Row="5"
+                            BorderThickness="0"
+                            Background="#e59400"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="5"
+                            Grid.Row="6"
+                            BorderThickness="0"
+                            Background="#b27300"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="5"
+                            Grid.Row="7"
+                            BorderThickness="0"
+                            Background="#7f5200"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="5"
+                            Grid.Row="8"
+                            BorderThickness="0"
+                            Background="#4c3100"
+                                Click="CouleurButtonClick"/>
+
+                        <!--Violet-->
+                        <Button Grid.Column="6"
+                            Grid.Row="0"
+                            BorderThickness="0"
+                            Background="#f2e5f2"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="6"
+                            Grid.Row="1"
+                            BorderThickness="0"
+                            Background="#d8b2d8"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="6"
+                            Grid.Row="2"
+                            BorderThickness="0"
+                            Background="#bf7fbf"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="6"
+                            Grid.Row="3"
+                            BorderThickness="0"
+                            Background="#a64ca6"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="6"
+                            Grid.Row="4"
+                            BorderThickness="0"
+                            Background="#8c198c"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="6"
+                            Grid.Row="5"
+                            BorderThickness="0"
+                            Background="#730073"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="6"
+                            Grid.Row="6"
+                            BorderThickness="0"
+                            Background="#590059"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="6"
+                            Grid.Row="7"
+                            BorderThickness="0"
+                            Background="#400040"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="6"
+                            Grid.Row="8"
+                            BorderThickness="0"
+                            Background="#260026"
+                                Click="CouleurButtonClick"/>
+
+                        <!--Rose-->
+                        <Button Grid.Column="7"
+                            Grid.Row="0"
+                            BorderThickness="0"
+                            Background="#fff8f9"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="7"
+                            Grid.Row="1"
+                            BorderThickness="0"
+                            Background="#ffecef"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="7"
+                            Grid.Row="2"
+                            BorderThickness="0"
+                            Background="#ffdfe5"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="7"
+                            Grid.Row="3"
+                            BorderThickness="0"
+                            Background="#ffd2da"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="7"
+                            Grid.Row="4"
+                            BorderThickness="0"
+                            Background="#ffc6d0"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="7"
+                            Grid.Row="5"
+                            BorderThickness="0"
+                            Background="#e5acb6"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="7"
+                            Grid.Row="6"
+                            BorderThickness="0"
+                            Background="#b2868e"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="7"
+                            Grid.Row="7"
+                            BorderThickness="0"
+                            Background="#7f6065"
+                                Click="CouleurButtonClick"/>
+
+                        <Button Grid.Column="7"
+                            Grid.Row="8"
+                            BorderThickness="0"
+                            Background="#4c393c"
+                                Click="CouleurButtonClick"/>
+
+
+                    </Grid>
+                </Border>
+
+            </Grid>
+
+            <!--Image -->
+            <Border Padding="20"
+                    Grid.Column="1"
+                    RenderTransformOrigin=".5,.5">
+                <Border.RenderTransform>
+                    <ScaleTransform x:Name="scale" 
+                                    ScaleX="{Binding ElementName=ZoomSlider, Path=Value, UpdateSourceTrigger=PropertyChanged}"
+                                    ScaleY="{Binding ElementName=ZoomSlider, Path=Value, UpdateSourceTrigger=PropertyChanged}"/>
+                </Border.RenderTransform>
+                
+                <Image x:Name="bmpImage" 
+                       Source="{Binding ImageVM.BmpSource, UpdateSourceTrigger=PropertyChanged}"
+                       MouseLeftButtonDown="Image_MouseLeftButtonDown" 
+                       MouseLeftButtonUp="Image_MouseLeftButtonUp" 
+                       MouseMove="Image_MouseMove"/>
+            </Border>
+        </Grid>
+
+        <!--Barre d'information-->
+        <Grid Grid.Row="2"
+              Background="White">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Text=" Clique gauche sur l'image pour dessiner"
+                       Style="{StaticResource barreTextBlock}"/>
+
+            <!--information sur la taille de l'image-->
+            <StackPanel Orientation="Horizontal"
+                        Grid.Column="1"
+                        VerticalAlignment="Center">
+                <TextBlock Text="{Binding Largeur, UpdateSourceTrigger=PropertyChanged}"
+                           Style="{StaticResource barreTextBlock}"/>
+                <TextBlock Text="x"
+                           Style="{StaticResource barreTextBlock}"/>
+                <TextBlock Text="{Binding Hauteur, UpdateSourceTrigger=PropertyChanged}"
+                           Style="{StaticResource barreTextBlock}"/>
+            </StackPanel>
+
+            <!--Zoom-->
+            <Grid Grid.Column="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="8*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Image Source="pack://siteoforigin:,,,/Resources/zoom-out.png"
+                       Style="{StaticResource imageBarreDeTache}"
+                       Grid.Column="0"/>
+
+                <Slider x:Name="ZoomSlider" 
+                        Grid.Column="1"
+                        VerticalAlignment="Center"                        
+                        Maximum="1"
+                        Minimum="0.5"
+                        Margin="5,0"/>
+
+                <Image Source="pack://siteoforigin:,,,/Resources/zoom-in.png"
+                       Style="{StaticResource imageBarreDeTache}"
+                       Grid.Column="2"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>

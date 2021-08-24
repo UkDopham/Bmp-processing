@@ -1,0 +1,64 @@
+﻿<Window x:Class="Traitement_image_Wpf.Views.DemandeUtilisateurWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Traitement_image_Wpf.Views"
+        mc:Ignorable="d"
+        Title="{Binding Titre}" 
+        Icon="pack://siteoforigin:,,,/Resources/man (1).png"
+        ResizeMode="NoResize"
+        Height="120" 
+        WindowStyle="None"
+        Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        
+        <Grid Grid.Row="0"
+              Background="White"
+              MouseLeftButtonDown ="Grid_MouseLeftButtonDown">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Text= "{Binding Question}"
+                       Style="{StaticResource barreTextBlock}"
+                       Grid.Column="0"/>
+
+            <!--Fermer-->
+            <Button Background="White"
+                        BorderThickness="0"
+                        Grid.Column="6"
+                        Click="FermerButtonClick">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Width="20"
+                        Source="pack://siteoforigin:,,,/Resources/cancel.png"/>
+                        <TextBlock Text=" Fermer"
+                                   FontSize="10"/>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+
+        </Grid>
+        <StackPanel Grid.Row="1"
+                    Background="{StaticResource grisClaire}">
+
+            <TextBox x:Name="reponseTextBox" 
+                 Margin="5"
+                 Background="White" 
+                 BorderThickness="0"/>
+
+            <Button Content="OK"
+                Margin="100,0"
+                    Background="White"
+                BorderThickness="0"
+                Click="ButtonClick"/>
+        </StackPanel>
+    </Grid>
+</Window>

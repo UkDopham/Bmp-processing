@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Traitement image Wpf", "Traitement image Wpf\Traitement image Wpf.csproj", "{0FFEE987-2C4E-44B2-B403-E88A871D1169}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Traitement image WpfTests", "Traitement image WpfTests\Traitement image WpfTests.csproj", "{72C0AB0C-DC6A-445E-9631-23AD51DC4D74}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0FFEE987-2C4E-44B2-B403-E88A871D1169}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FFEE987-2C4E-44B2-B403-E88A871D1169}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FFEE987-2C4E-44B2-B403-E88A871D1169}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FFEE987-2C4E-44B2-B403-E88A871D1169}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72C0AB0C-DC6A-445E-9631-23AD51DC4D74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72C0AB0C-DC6A-445E-9631-23AD51DC4D74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72C0AB0C-DC6A-445E-9631-23AD51DC4D74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72C0AB0C-DC6A-445E-9631-23AD51DC4D74}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1140E960-7989-4C56-A50E-FF44CF1B86B8}
+	EndGlobalSection
+EndGlobal

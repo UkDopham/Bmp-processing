@@ -1,0 +1,7 @@
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Do Pham Alexandre Probleme\Do Pham Alexandre Probleme\bin\Debug\Do Pham Alexandre Probleme.exe.config
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Do Pham Alexandre Probleme\Do Pham Alexandre Probleme\bin\Debug\Do Pham Alexandre Probleme.exe
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Do Pham Alexandre Probleme\Do Pham Alexandre Probleme\bin\Debug\Do Pham Alexandre Probleme.pdb
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Do Pham Alexandre Probleme\Do Pham Alexandre Probleme\obj\Debug\Do Pham Alexandre Meyer Adrien Probleme.csprojResolveAssemblyReference.cache
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Do Pham Alexandre Probleme\Do Pham Alexandre Probleme\obj\Debug\Do Pham Alexandre Meyer Adrien Probleme.csproj.CoreCompileInputs.cache
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Do Pham Alexandre Probleme\Do Pham Alexandre Probleme\obj\Debug\Do Pham Alexandre Probleme.exe
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Do Pham Alexandre Probleme\Do Pham Alexandre Probleme\obj\Debug\Do Pham Alexandre Probleme.pdb

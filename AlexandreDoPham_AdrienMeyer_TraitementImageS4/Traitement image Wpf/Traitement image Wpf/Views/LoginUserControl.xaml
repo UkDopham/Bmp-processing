@@ -1,0 +1,122 @@
+﻿<UserControl x:Class="Traitement_image_Wpf.Views.LoginUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Traitement_image_Wpf.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="700" 
+             d:DesignWidth="1050">
+
+    <Border Background="{StaticResource grisClaire}">
+             <Grid>
+                 <Grid.ColumnDefinitions>
+                     <ColumnDefinition Width="*"/>
+                     <ColumnDefinition Width="*"/>
+                     <ColumnDefinition Width="*"/>
+                 </Grid.ColumnDefinitions>
+
+                 <Grid.RowDefinitions>
+                     <RowDefinition Height="*"/>
+                     <RowDefinition Height="4*"/>
+                     <RowDefinition Height="8*"/>
+                     <RowDefinition Height="5*"/>
+                 </Grid.RowDefinitions>
+
+            <Grid Grid.Column="0"
+                    Grid.Row="0"
+                    Grid.ColumnSpan="3"
+                    Background="White"
+                    MouseLeftButtonDown="BorderMouseLeftButtonDown">
+                
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Column="0"
+                           Text=" Traitement d'image du 4ème semestre"
+                           FontSize="20"
+                           VerticalAlignment="Center"/>
+                <!--Fermer-->
+                <Button Background="White"
+                        BorderThickness="0"
+                        Grid.Column="2"
+                        Click="FermerButtonClick">
+                    <Button.Content>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Style="{StaticResource imageBarreDeTache}"
+                               Source="pack://siteoforigin:,,,/Resources/cancel.png"/>
+                            <TextBlock Text=" Fermer"
+                                       Style="{StaticResource barreTextBlock}"/>
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
+                
+            </Grid>
+                 
+                 <StackPanel Grid.Column="1"
+                             Grid.Row="2">
+                     <Image Source="pack://siteoforigin:,,,/Resources/login.png"
+                            Height="100"
+                            Width="100"/>
+                     
+                     <TextBlock Text="Identifiant"
+                                HorizontalAlignment="Center"
+                                FontSize="25"/>
+                     
+                     <!-- Zone de texte pour enter les identifiants-->
+                     <Grid >
+                         <Grid.ColumnDefinitions>
+                             <ColumnDefinition Width="5*"/>
+                             <ColumnDefinition Width="*"/>
+                         </Grid.ColumnDefinitions>
+                         
+                         <TextBox Grid.Column="0"
+                                  Padding="2"
+                                  BorderBrush="White"
+                                  Text="{Binding Identifiant}"
+                                  FontSize="25"
+                                  VerticalAlignment="Center"/>
+                         
+                         <Button Grid.Column="1"
+                                 Background="{StaticResource grisClaire}"
+                                 Click="Button_Click"
+                                 BorderBrush="White">
+                             <Button.Content>
+                                 <Image Source="pack://siteoforigin:,,,/Resources/log-in.png"
+                                        Width="40"
+                                        Height="40"/>
+                             </Button.Content>
+                         </Button>
+                     </Grid>
+                     
+                     <!-- remember me-->
+                     <StackPanel Orientation="Horizontal">
+                         <CheckBox IsChecked="{Binding RappelIdentifiant}"/>
+                         <TextBlock Text="se souvenir de moi"
+                                    Margin="5,0,0,0"
+                                    FontSize="15"/>
+                     </StackPanel>
+
+                     <!-- invité-->
+                     <Button Background="{StaticResource grisClaire}"
+                             Margin="0,5"
+                             BorderThickness="0"
+                             Content="jouer comme invité"
+                             FontSize="15"
+                             FontStyle="Italic"
+                             Click="inviteButton"/>
+                 </StackPanel>
+                 
+                 <!-- signature-->
+                 <TextBlock Text="fait par Alexandre Do Pham et Adrien Meyer"
+                            Grid.Column="0"
+                            Grid.Row="3"
+                            FontSize="14"
+                            VerticalAlignment="Bottom"
+                            Foreground="Black"/>
+             </Grid>
+    </Border>
+</UserControl>

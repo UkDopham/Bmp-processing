@@ -1,0 +1,81 @@
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\camel.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\cancel.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\cat.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\chicken.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\contrast-icon.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\dog.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\duck.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\giraffe.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\glass-cleaning.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\lion.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\login (1).png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\login.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\mole.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\password.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\picture.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\power.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\reindeer.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\rgb.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\rotation.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\search.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\snake.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\NouvelleImage.bmp
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\color-wheel.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\diagram.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\girl.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\layer.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\log-in.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\man (1).png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\man (2).png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\man (3).png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\man (4).png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\man.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\paint-bucket.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\pixel.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\printer.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\refresh.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\scale.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\text.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\trophy.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\vector.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\magic-mirror.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\contrast-rotated-symbol.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\couple.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\flower-of-complex-design-shape.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\minecraft.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\speed-limit.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\folder.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\bmp.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\checked.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\icon.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\unlock.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\zoom-in.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\zoom-out.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\pen.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\new.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\left-arrow.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\Nouvelle_Image.bmp
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\eraser.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\navigation-history-interface-symbol-of-a-clock-with-an-arrow.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\height.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\width.png
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Resources\ost.wav
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\fr\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\fr\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\fr\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Traitement image WpfTests.dll
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Traitement image WpfTests.pdb
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Traitement image Wpf.exe
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Traitement image Wpf.pdb
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Traitement image Wpf.exe.config
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\obj\Debug\Traitement image WpfTests.csprojResolveAssemblyReference.cache
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\obj\Debug\Traitement image WpfTests.csproj.CoreCompileInputs.cache
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\obj\Debug\Traitement image WpfTests.dll
+C:\Users\Alexa\OneDrive\ESILV\Année 2\2ème Semestre\Problème scientifique informatique -\Traitement image Wpf\Traitement image WpfTests\obj\Debug\Traitement image WpfTests.pdb

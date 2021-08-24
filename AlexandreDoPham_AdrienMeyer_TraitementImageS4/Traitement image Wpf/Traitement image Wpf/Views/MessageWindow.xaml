@@ -1,0 +1,119 @@
+﻿<Window x:Class="Traitement_image_Wpf.Views.MessageWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Traitement_image_Wpf.Views"
+        mc:Ignorable="d"
+        Title="Message" 
+        Height="120" 
+        Width="250"
+        Icon="pack://siteoforigin:,,,/Resources/text.png"
+        ResizeMode="NoResize"
+        FontFamily="Segoe UI Light"
+        WindowStyle="None">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+        
+        <Grid Grid.Row="0"
+              Background="White"
+              MouseLeftButtonDown ="Grid_MouseLeftButtonDown">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Text=" Message"
+                       Style="{StaticResource barreTextBlock}"
+                       Grid.Column="0"/>
+
+            <!--Fermer-->
+            <Button Background="White"
+                        BorderThickness="0"
+                        Grid.Column="6"
+                        Click="FermerButtonClick">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Width="20"
+                        Source="pack://siteoforigin:,,,/Resources/cancel.png"/>
+                        <TextBlock Text=" Fermer"
+                                   FontSize="10"
+                                   VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+
+        </Grid>
+        <StackPanel Background="White"
+                    Grid.Row="1">
+
+            <TextBlock Grid.Column="1" 
+                   Text="   Quel message voulez vous écrire ?"
+                   Background="White"/>
+
+            <TextBox Padding="2" 
+                 Margin="20,10,20,0"
+                 BorderThickness="0"
+                 Text="{Binding MessageCode}"
+                 Foreground="White"
+                 Background="#3399ff"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- color palette-->
+                <Button Margin="20,10,20,10" 
+                    Background="#3399ff"
+                    BorderThickness="0"
+                    Click="ColorButtonClick"
+                    Content="Couleur"
+                    Foreground="White"
+                    Grid.Column="0"/>
+
+                <StackPanel Grid.Column="1">
+                    <TextBox Text="Taille de la police"
+                         Background="White"
+                         FontSize="8"
+                         BorderThickness="0"
+                         Foreground="Black"/>
+                    <ComboBox x:Name="tailleComboBox"                              >
+                        <ComboBoxItem Content="10"
+                                  IsSelected="True"/>
+                        <ComboBoxItem Content="12"/>
+                        <ComboBoxItem Content="14"/>
+                        <ComboBoxItem Content="16"/>
+                        <ComboBoxItem Content="18"/>
+                        <ComboBoxItem Content="20"/>
+                        <ComboBoxItem Content="22"/>
+                        <ComboBoxItem Content="24"/>
+                        <ComboBoxItem Content="26"/>
+                        <ComboBoxItem Content="28"/>
+                        <ComboBoxItem Content="30"/>
+                        <ComboBoxItem Content="32"/>
+                        <ComboBoxItem Content="34"/>
+                    </ComboBox>
+                </StackPanel>
+
+                <!-- bouton pour fermer-->
+                <Button Margin="20,10,20,10" 
+                    Background="#3399ff"
+                    BorderThickness="0"
+                    Click="ButtonClick"
+                    Content="OK"
+                    Foreground="White"
+                    Grid.Column="2">
+                </Button>
+
+            </Grid>
+        </StackPanel>
+    </Grid>  
+        
+</Window>
