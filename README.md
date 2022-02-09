@@ -3,7 +3,7 @@
 # Story
 
 Creation of a software allowing to modify a bmp image in real time. 
-</br> This is a 2nd year project at L'esilv in a computer science project course.The project was developed over a period of 6 weeks with approximately 3 hours per week.
+</br> This is a 2nd year project at L'esilv in a computer science project course. The project was developed over a period of 6 weeks with approximately 6 hours per week.
 
 <img src='img/Capture d’écran 2021-08-24 à 16.59.40.png' width='50%'/>
 
